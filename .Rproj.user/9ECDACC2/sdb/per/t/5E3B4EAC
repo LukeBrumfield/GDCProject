@@ -1,0 +1,17 @@
+{
+    "contents" : "rowSums(data1)/ncol(data1)\n\ncombined <- cbind.data.frame(testsubjects, data1)\n\nmeans[means[1] == 2,]",
+    "created" : 1414079826092.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4066828164",
+    "id" : "5E3B4EAC",
+    "lastKnownWriteTime" : 1414184648,
+    "path" : "~/R/GDCProject/run_analysis.R",
+    "project_path" : "run_analysis.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
