@@ -1,3 +1,4 @@
+library(reshape)
 #Get the data from the various files
 xtest <- read.table("UCI HAR Dataset/test/X_test.txt")
 ytest <- read.table("UCI HAR Dataset/test/y_test.txt")
@@ -16,6 +17,8 @@ activities <- grepl(pattern = "mean", features[,2]) | grepl(pattern = "std", fea
 names <- c(features[,2][activities])
 
 bigData <- rbind.data.frame(testData, trainData)
+
+colnames(bigData) <- c("activity", "subject", names)
 #Appropriately labels the data set with descriptive variable names. 
 bigData$activity[compactData$activity == 1] <- "STANDING"
 bigData$activity[compactData$activity == 2] <- "WALKING_UPSTAIRS"
